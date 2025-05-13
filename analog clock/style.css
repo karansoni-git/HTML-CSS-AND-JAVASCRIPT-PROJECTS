@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+h1{
+    margin: 2rem;
+}
+.clock{
+    background-image: url("https://www.dansmaclasseboutique.com/cdn/shop/products/horloge1vide.jpg?v=1680374650");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock::before{
+    content: "";
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+}
+.hour{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.hour::before{
+    content: "";
+    height: 50%;
+    width: 0.6rem;
+    border-radius: 10rem;
+    background-color: black;
+}
+
+.minute{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.minute::before{
+    content: "";
+    height: 50%;
+    width: 0.4rem;
+    border-radius: 10rem;
+    background-color: gray;
+}
+.second {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.second::before{
+    content: "";
+    height: 50%;
+    width: 0.15rem;
+    border-radius: 10rem;
+    background-color: rgb(240, 6, 6);
+}
