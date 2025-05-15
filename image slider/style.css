@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.slide{
+    display: none;
+    animation: jadu 0.6s ease-in-out;
+}
+@keyframes jadu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+img{
+    width:100%;
+    height: 99.5vh;
+}
+
+.btn{
+    font-size: 4.5rem;
+    position: absolute;
+    top:45%;    
+    text-align: center;
+    transition: all 0.5s linear;
+    width:60px;
+    border-radius: 10px;
+    background-color: rgba(26, 24, 24, 0.606);
+}
+.btn:hover{
+    color:whitesmoke;
+    cursor: pointer;
+    text-align: center;
+    width:60px;
+    border-radius: 10px;
+    background-color: rgba(26, 24, 24, 0.606)
+}
+.prev{
+    left:0.5rem;
+}
+.prev::selection{
+    background-color:transparent;
+}
+.next{
+    right:0.5rem;
+}
+.next::selection{
+    background-color: transparent;
+}
