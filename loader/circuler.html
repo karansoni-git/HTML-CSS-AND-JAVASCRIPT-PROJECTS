@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      svg {
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        animation:rotate 1.5s linear infinite ;
+      }
+      @keyframes rotate {
+        100%{
+            transform: rotate(360deg);
+        }
+      }
+      #cir {
+        animation: updates 1.5s infinite ease-in-out alternate;
+        /* stroke-dasharray: 196, 400;
+        stroke-dashoffset: 0; */
+      }
+      @keyframes updates {
+        0% {
+          stroke-dasharray: 41, 400;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 196, 400;
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dasharray: 440, 400;
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <svg>
+        <circle
+          cx="100"
+          cy="100"
+          r="70"
+          stroke="black"
+          stroke-width="9"
+          fill="none"
+          id="cir"
+        />
+      </svg>
+    </div>
+  </body>
+</html>
