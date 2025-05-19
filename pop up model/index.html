@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Up Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popup_container">
+      <h3>Pop Up Model</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et magni
+        cumque cum sit fugiat ipsa consequatur nesciunt eum? Maiores!
+      </p>
+      <button class="btn popBtn">Close</button>
+    </div>
+    <div class="btn_container">
+      <button class="btn">Click Me</button>
+    </div>
+  </body>
+  <script>
+    let clickButton = document.querySelector(".btn_container .btn");
+    let popUpContainer = document.querySelector(".popup_container");
+    let closeButton = document.querySelector(".popBtn");
+    clickButton.addEventListener("click", () => {
+      popUpContainer.style.display = "block";
+      clickButton.style.display = "none";
+    });
+
+    closeButton.addEventListener("click", () => {
+      popUpContainer.style.display = "none";
+      clickButton.style.display = "block";
+    });
+  </script>
+</html>
