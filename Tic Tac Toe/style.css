@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.start{
+    background-color: #FFCE32;
+    width: 100%;
+    height: 100%;
+    padding: 308.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stBtn{
+    width: 13rem;
+    height: 7rem;
+    background-color: #1D63FF;
+    font-size: 2rem;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn:hover{
+    font-size: 1.8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url('game_background.jpg');
+    background-size:cover;
+}
+.container{
+    width: 35%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(171, 127, 70, 0.622);
+    display:none;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: monospace;
+    background-color: #1d65ffed;
+    margin: 1.3rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    width: 10rem;
+    height: 10rem;
+    margin: 5px;
+    border:none;
+    color: black;
+    font-size: 5rem;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+.setting
+{
+    margin: 0.6rem;
+    background-color: #1d65ffed;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.setting_btn
+{
+    margin: 5px;
+    width: 10rem;
+    height: 5rem;
+    background-color: #ffcf32d8;
+    font-size: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    font-family:monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.setting_btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.winningMsg{
+    background-color: #e1d00ce9;
+    text-align: center;
+    width: 35rem;
+    height: 10rem;
+    font-family:monospace;
+    border-radius: 12px;
+    display: none;
+}
+#okBtn{
+    width: 6rem;
+    height: 3rem;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #ffcf32d8;
+}
+#okBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
