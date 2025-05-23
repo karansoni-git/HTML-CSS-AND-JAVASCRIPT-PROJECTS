@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playpen Sans Deva", cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FA812F;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.todo{  
+    background: #F3C623 ;   
+    width: 35rem;
+    height: auto;
+    margin: 8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#todoImg{
+    margin-left: 0.7rem;
+}
+#addTask{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction:row;
+}
+#input{
+    width: 25rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+#btn{
+    width: 10rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    position:relative;
+    right: 2rem;
+    transition: all 0.2s linear;
+    font-weight: 600;
+}
+#btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+
+#btn:active{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.todoItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.todoItem h3{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+.select{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.deleteBtn{
+    font-size: 1.5rem;
+    padding: 0 0.4rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: all 0.2s linear;
+    border: none;
+    background-color: #F3C623;
+}
+.deleteBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+.deleteBtn:active{
+    box-shadow: rgb(12, 14, 15) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
