@@ -14,24 +14,10 @@ const randomFun = {
   symbols: randomSymbols,
 };
 
-generateBtn.addEventListener("click", () => {
-  const length = pswLng.value;
-  const isUpperChk = uppercase.checked;
-  const isLowerChk = lowercase.checked;
-  const isNumbersChk = numbers.checked;
-  const isSymbolsChk = symbols.checked;
-
-  outputVal.value = generatePassword(
-    length,
-    isUpperChk,
-    isLowerChk,
-    isNumbersChk,
-    isSymbolsChk
-  );
-});
+let generatedPassword = "";
+let finalPassword;
 
 function generatePassword(length, upper, lower, numbers, symbols) {
-  let generatedPassword = "";
   let checkedCount = upper + lower + numbers + symbols;
   let countArray = [{ upper }, { lower }, { numbers }, { symbols }].filter(
     (item) => {
@@ -50,23 +36,24 @@ function generatePassword(length, upper, lower, numbers, symbols) {
       console.log(generatedPassword);
     });
   }
-  const finalPassword = generatedPassword.slice(0, length);
-  copyPassword(finalPassword);
+  finalPassword = generatedPassword.slice(0, length);
   return finalPassword;
 }
 
-function copyPassword(copyPsw) {
-  copyBtn.addEventListener("click", () => {
+copyBtn.addEventListener("click", () => {
+  if (finalPassword === undefined) {
+    //do nothing
+  } else {
     navigator.clipboard
-      .writeText(copyPsw)
+      .writeText(finalPassword)
       .then(() => {
         alert("Text copied to clipboard!");
       })
       .catch((err) => {
         console.error("Failed to copy: ", err);
       });
-  });
-}
+  }
+});
 
 function randomLowercase() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
