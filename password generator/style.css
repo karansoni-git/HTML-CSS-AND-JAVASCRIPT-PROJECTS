@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FCE7C8;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  font-family: "Playpen Sans Deva", cursive;
+}
+h3{
+    font-size: 2rem;
+}
+#clipboardText{
+    width: 20rem;
+    font-size: 1.8rem;
+    border: none;
+    cursor: copy;
+    outline: none;
+    padding: 0 1rem;
+    opacity: 0.8;
+}
+.generator{
+    width: 34rem;
+    height: 28rem;
+    background-color: #B1C29E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+.config{
+    margin-left: 1rem;
+}
+.chkBox{
+    margin-right: 1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.field{
+    display: flex; 
+    margin-top:10px;
+    width: 100%;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.password{
+    display: flex; 
+    margin-top:10px;
+    text-transform: capitalize;
+}
+#clipboardBtn{
+    position: relative;
+    right: 23px;
+    background-color: #F0A04B;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#clipboard{
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+}
+#pswLng{
+    width: 45px;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    border: 2px solid black;
+}
+#generatePsw{
+    padding: 0.5rem 0.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #F0A04B;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    font-family: "Playfair Display", serif;
+}
+#generatePsw:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#generatePsw:active{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
