@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playpen+Sans+Deva:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans+Arabic:wght@100..800&family=Playpen+Sans+Deva:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="generator">
+        <h3>Generate Password</h3>
+        <div class="password">
+          <input type="text" id="clipboardText" readonly />
+          <button type="button" id="clipboardBtn">
+            <img src="clipboard.png" alt="clipboard" id="clipboard" />
+          </button>
+        </div>
+        <div class="field">
+          <h4 class="config">password length</h4>
+          <input type="number" id="pswLng" min="6" max="20" value="6" />
+        </div>
+        <div class="field">
+          <h4 class="config">include uppercase letters</h4>
+          <input type="checkbox" class="chkBox" id="uppercase" />
+        </div>
+        <div class="field">
+          <h4 class="config">include lowercase letters</h4>
+          <input type="checkbox" class="chkBox" id="lowercase" />
+        </div>
+        <div class="field">
+          <h4 class="config">include numbers</h4>
+          <input type="checkbox" class="chkBox" id="numbers" />
+        </div>
+        <div class="field">
+          <h4 class="config">include symbols</h4>
+          <input type="checkbox" class="chkBox" id="symbols" />
+        </div>
+        <div>
+          <button type="button" id="generatePsw">Generate Password</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
