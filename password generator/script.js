@@ -50,7 +50,22 @@ function generatePassword(length, upper, lower, numbers, symbols) {
       console.log(generatedPassword);
     });
   }
-  return generatedPassword.slice(0, length);
+  const finalPassword = generatedPassword.slice(0, length);
+  copyPassword(finalPassword);
+  return finalPassword;
+}
+
+function copyPassword(copyPsw) {
+  copyBtn.addEventListener("click", () => {
+    navigator.clipboard
+      .writeText(copyPsw)
+      .then(() => {
+        alert("Text copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  });
 }
 
 function randomLowercase() {
