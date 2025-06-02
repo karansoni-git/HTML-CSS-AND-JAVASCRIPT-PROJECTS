@@ -1,0 +1,138 @@
+const Items = [
+  {
+    id: "001",
+    itemImg: "images/1.jpg",
+    brandName: "Carlton London",
+    itemName: "Rhodium-plated CZ Floral Studs",
+    returnPeriod: 7,
+    deliveryDays: 6,
+    rating: {
+      stars: 4.5,
+      reviews: 1400,
+    },
+    prices: {
+      currentPrice: 606,
+      originalPrice: 1045,
+      discount: 42,
+    },
+  },
+  {
+    id: "002",
+    itemImg: "images/2.jpg",
+    brandName: "CUKOO",
+    itemName: "Women Padded Halter Neck Swimming Dress",
+    returnPeriod: 10,
+    deliveryDays: 4,
+    prices: {
+      originalPrice: 2599,
+      currentPrice: 1507,
+      discount: 42,
+    },
+    rating: {
+      stars: 4.3,
+      reviews: 24,
+    },
+  },
+  {
+    id: "003",
+    itemImg: "images/3.jpg",
+    brandName: "NUEVOSDAMAS",
+    itemName: "Women Red & White Printed A-Line Knee-Length Skirts",
+    returnPeriod: 7,
+    deliveryDays: 8,
+    prices: {
+      originalPrice: 1599,
+      currentPrice: 495,
+      discount: 69,
+    },
+    rating: {
+      stars: 4.1,
+      reviews: 249,
+    },
+  },
+  {
+    id: "004",
+    itemImg: "images/4.jpg",
+    brandName: "ADIDAS",
+    itemName: "Indian Cricket ODI Jersey",
+    returnPeriod: 10,
+    deliveryDays: 8,
+    prices: {
+      originalPrice: 999,
+      currentPrice: 999,
+      discount: 0,
+    },
+    rating: {
+      stars: 4.6,
+      reviews: 2130,
+    },
+  },
+  {
+    id: "005",
+    itemImg: "images/5.jpg",
+    brandName: "Roadster",
+    itemName: "Pure Cotton T-shirt",
+    returnPeriod: 12,
+    deliveryDays: 6,
+    prices: {
+      originalPrice: 1399,
+      currentPrice: 489,
+      discount: 65,
+    },
+    rating: {
+      stars: 4.2,
+      reviews: 3500,
+    },
+  },
+  {
+    id: "006",
+    itemImg: "images/6.jpg",
+    brandName: "Nike",
+    itemName: "Men ReactX Running Shoes",
+    returnPeriod: 14,
+    deliveryDays: 3,
+    prices: {
+      originalPrice: 14995,
+      currentPrice: 14995,
+      discount: 0,
+    },
+    rating: {
+      stars: 4.7,
+      reviews: 3183,
+    },
+  },
+  {
+    id: "007",
+    itemImg: "images/7.jpg",
+    brandName: "The Indian Garage Co",
+    itemName: "Men Slim Fit Regular Shorts",
+    returnPeriod: 10,
+    deliveryDays: 5,
+    prices: {
+      originalPrice: 1599,
+      currentPrice: 639,
+      discount: 60,
+    },
+    rating: {
+      stars: 4.2,
+      reviews: 388,
+    },
+  },
+  {
+    id: "008",
+    itemImg: "images/8.jpg",
+    brandName: "Nivea",
+    itemName: "Men Fresh Deodrant 150ml",
+    returnPeriod: 12,
+    deliveryDays: 8,
+    prices: {
+      originalPrice: 285,
+      currentPrice: 142,
+      discount: 50,
+    },
+    rating: {
+      stars: 4.2,
+      reviews: 5200,
+    },
+  },
+];
