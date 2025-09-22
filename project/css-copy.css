@@ -1,0 +1,316 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epunda Slab";
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    height: 100%;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.938rem 2.5rem;
+}
+
+.header nav h1{
+    display: flex;
+    font-size: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.188rem;
+}
+.header nav h1 span{
+    color :#bbf362;
+    text-shadow: 1.6px 1.6px 0.6px black, -1.6px -1.6px 0.6px black ;
+}
+
+.header nav h1 i{
+    font-size: 2.188rem;
+    transform: rotate(45deg);
+}
+.header nav .nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header nav .nav-options h4{
+    font-size: 1.625rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0.625rem 0.438rem;
+    border-radius: 2.5rem;
+}
+.header nav .nav-options h4:hover{
+    background-color: #bbf362;
+    cursor: pointer;
+}
+
+.header nav .nav-options button{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: 0.188rem solid black;
+    border-radius: 0.938rem;
+    padding: 0.938rem 1.25rem;
+    cursor: pointer;
+}
+
+.hero{
+    height: 77%;
+    width: 100%;
+    display: flex;
+    padding: 1.875rem 3.75rem;
+}
+.hero .left-side{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: flex-start;
+    padding: 1.875rem 1.25rem;
+}
+.hero .left-side h1{
+    font-size: 3.563rem;
+    text-transform: capitalize;
+    font-family: "Epunda Slab", serif;
+}
+.hero .left-side p{
+    font-size: 1.25rem;
+    width: 83%;
+}
+.hero .left-side button{
+    padding: 0.625 0.938rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.hero .right-side{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsered{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0rem 3.75rem;
+}
+.sponsered img{
+    width: 6.25rem;
+    height: 5rem;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+.main .services{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.875rem 6.25rem;
+    margin-top: 4.375rem;
+    gap : 3.125rem;
+}
+.main .services h2{
+    padding: 0.25rem 1.25rem;
+    border-radius: 0.625rem;
+    font-size: 2.5rem;
+    background-color: #bbf362;
+}
+.main .services p{
+    font-size: 1.25rem;
+    width: 47%;
+}
+.box-container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 6.25rem;
+}
+.box-container .box{    
+    width: 45%;
+    height: 45%;
+    border :3px solid black;
+    border-radius: 1.25rem;
+    padding: 1.875rem;
+    box-shadow: 0 0.938rem 0 black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-container .box .text-part{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-container .box .text-part h2{
+    font-size: 2.5rem;
+    background-color: #bbf362;
+    border-radius: 0.625rem;
+    padding: 0rem 0.438rem;
+    
+}
+.box-container .box .text-part h4 {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    gap: 1.25rem;
+}
+
+.box-container .box .text-part h4 i{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875rem;
+    padding: 0.625rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.box-container .box .image-part{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.box-container .box .image-part img{
+    height: 11.25rem;
+}
+.box-container .black{
+    background-color: black;
+    color: white;
+}
+.box-container .black .text-part h2 , .box-container .black .text-part h4 i{
+    background-color: white;
+    color: black;
+}
+.footer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 4.375rem;
+    margin-top: 3.75rem;
+}
+.footer .section-1{
+    width: 90%;
+    margin-top: 1.25rem;
+}
+.footer .section-1 .first-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 1.25rem;
+}
+.footer .section-1 .first-section .text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.375rem;
+}
+.footer .section-1 .first-section .text h2{
+    font-size: 2.188rem;
+}
+.footer .section-1 .first-section .text p{
+    font-size: 1.5rem;
+}
+.footer .section-1 .first-section .text button{
+    padding: 0.5rem 1.563rem;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+}
+.footer .section-1 .first-section .image img{
+    height: 16.25rem;
+}
+.footer .section-2 {
+    width: 90%;
+}
+.footer .section-2 .case-study{
+    display: flex;
+    align-items: center;
+    gap : 3.125rem;
+}
+.footer .section-2 .case-study h2{
+    padding: 0.25rem 1.25rem;
+    border-radius: 0.625rem;
+    font-size: 2.5rem;
+    background-color: #bbf362;
+}
+.footer .section-2 .case-study p{
+    font-size: 1.25rem;
+    width: 45%;
+}
+.footer .section-3 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1.25rem 2.188rem;
+    border-radius: 1.125rem;
+}
+.footer .section-3 .box{
+    width: 26%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.footer .section-3 .box h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.footer .section-3 .box h4{
+    display: flex;
+    font-size: 1.063rem;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    color: #bbf362;
+}
+
+.footer .section-3 .box h4 i{
+    font-size: 2.188rem;
+    font-weight: 600;
+    transform: rotate(20deg);
+    transition: 0.1s linear;
+    border-radius: 50%;
+}
+.footer .section-3 .box h4 i:hover{
+    transform: rotate(10deg);
+    background-color: whitesmoke;
+} */
